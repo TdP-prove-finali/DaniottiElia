@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="482.0" prefWidth="462.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.ControllerAnalisi">
+   <top>
+      <VBox prefHeight="445.0" prefWidth="422.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="25.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="26.0" prefWidth="47.0" text="Stagione" />
+                  <ComboBox fx:id="boxStagione" prefHeight="25.0" prefWidth="126.0">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin></ComboBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="17.0" prefWidth="420.0">
+               <children>
+                  <CheckBox fx:id="checkLeone" mnemonicParsing="false" prefHeight="42.0" prefWidth="110.0" text="Leone" />
+                  <CheckBox fx:id="checkElefante" mnemonicParsing="false" prefHeight="33.0" prefWidth="110.0" text="Elefante" />
+                  <CheckBox fx:id="checkRinoceronte" mnemonicParsing="false" prefHeight="31.0" prefWidth="110.0" text="Rinoceronte" />
+                  <CheckBox fx:id="checkBufalo" mnemonicParsing="false" prefHeight="17.0" prefWidth="82.0" text="Bufalo" />
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="14.0" prefWidth="442.0">
+               <children>
+                  <CheckBox fx:id="checkLeopardo" mnemonicParsing="false" prefHeight="17.0" prefWidth="110.0" text="Leopardo" />
+                  <CheckBox fx:id="checkGhepardo" mnemonicParsing="false" prefHeight="17.0" prefWidth="110.0" text="Ghepardo" />
+                  <CheckBox fx:id="checkZebra" mnemonicParsing="false" prefHeight="17.0" prefWidth="110.0" text="Zebra" />
+                  <CheckBox fx:id="checkAntilope" mnemonicParsing="false" prefHeight="17.0" prefWidth="80.0" text="Antilope" />
+               </children>
+               <VBox.margin>
+                  <Insets top="4.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="0.0" prefWidth="420.0">
+               <children>
+                  <CheckBox fx:id="checkGnu" mnemonicParsing="false" prefHeight="17.0" prefWidth="110.0" text="Gnu" />
+                  <CheckBox fx:id="checkIppopotamo" mnemonicParsing="false" prefHeight="17.0" prefWidth="110.0" text="Ippopotamo" />
+                  <CheckBox fx:id="checkCoccodrillo" mnemonicParsing="false" prefHeight="17.0" prefWidth="110.0" text="Coccodrillo" />
+                  <CheckBox fx:id="checkGiraffa" mnemonicParsing="false" prefHeight="17.0" prefWidth="66.0" text="Giraffa" />
+               </children>
+               <VBox.margin>
+                  <Insets top="4.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="0.0" prefWidth="420.0">
+               <children>
+                  <CheckBox fx:id="checkIena" mnemonicParsing="false" text="Iena" />
+               </children>
+               <VBox.margin>
+                  <Insets top="4.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="36.0" prefWidth="422.0">
+               <children>
+                  <Button fx:id="btnAnalisi" mnemonicParsing="false" onAction="#doAnalisi" prefHeight="35.0" prefWidth="113.0" text="Analisi densità">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="15.0" top="55.0" />
+               </VBox.margin>
+            </HBox>
+            <TextArea fx:id="txtResult" prefHeight="170.0" prefWidth="422.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin></TextArea>
+            <Button fx:id="btnIndietro" mnemonicParsing="false" onAction="#doGoHome" prefHeight="19.0" prefWidth="58.0" text="Indietro">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin></Button>
+         </children>
+      </VBox>
+   </top>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</BorderPane>
